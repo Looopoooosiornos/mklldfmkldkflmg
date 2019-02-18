@@ -1,0 +1,290 @@
+#background
+{
+	background-color: rgba(208, 248, 111);
+	width: 100%;
+	height: 110%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#backgroundRegist
+{
+	background-color: rgba(171,240,0, .4);
+	width: 20%;
+	height: 117.5%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+}
+#BoxRegistcollor
+{
+	background-color: rgba(141,180,45, .6);
+	width: 90%;
+	height: 75%;
+	border-radius: 4%;
+	position: absolute;
+	top: 17%;
+	left: 4.5%;
+}
+#name
+{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 80%;
+	height: 8%;
+}
+#email
+{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	width: 80%;
+	height: 8%;
+}
+#Password
+{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	width: 80%;
+	height: 8%;
+}
+#Confirm
+{
+	position: absolute;
+	top: 60%;
+	left: 10%;
+	width: 80%;
+	height: 8%;
+}
+#submit
+{
+	width: 80%;
+	height: 8%;
+	background-color: red;
+	border: solid 1px red;
+	position: absolute;
+	top: 75%;
+	left: 10%;
+}
+#remember
+{
+	position: absolute;
+	top: 85%;
+	left: 9.5%;
+}
+#TextRemember
+{
+	font-size: 13px;
+	position: absolute;
+	top: 85%;
+	left: 19%;
+}
+h1
+{
+ 	text-align: center;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20%;
+}
+form>div {
+  position: relative;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+input {
+  width: auto;
+  display: block;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+
+.tooltip {
+  background: tomato;
+  display: block;
+  padding: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  width: 10rem;
+  transform-style: preserve-3d;
+  transform: translate(0%, 15%);
+  top: 100%;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  z-index: 100;
+  will-change: opacity, visibility;
+      transition: opacity 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+.tooltip:after {
+  content: '';
+  position: absolute;
+  left:50%;
+  margin-left: -5px;
+  top: -9px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid tomato;
+}
+
+
+input:invalid ~ .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+input:valid ~ .tooltip {
+  transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+
+
+
+* 
+{
+	box-sizing: border-box
+} 
+body 
+{
+	font-family: Verdana, sans-serif; margin:0
+} 
+.mySlides 
+{
+	display: none;
+} 
+img 
+{
+	vertical-align: middle;
+} 
+
+/* Slideshow container */
+.slideshow-container 
+{ 
+width: 100%; 
+position: absolute;
+top: 0%;
+left: 0%; 
+margin: auto; 
+} 
+
+/* Next & previous buttons */ 
+.prev, .next 
+{ 
+cursor: pointer; 
+position: absolute; 
+top: 91%; 
+margin-left: 40%;
+margin-right: 40%;
+width: auto; 
+padding: 16px; 
+margin-top: -22px; 
+color: white; 
+font-weight: bold; 
+font-size: 40px; 
+transition: 0.6s ease; 
+border-radius: 0 3px 3px 0; 
+user-select: none; 
+} 
+
+/* Position the "next button" to the right */ 
+.next 
+{ 
+right: 0; 
+border-radius: 3px 0 0 3px; 
+} 
+
+/* On hover, add a black background color with a little bit see-through */ 
+.prev:hover, .next:hover 
+{ 
+background-color: rgba(0,0,0,0.8); 
+} 
+
+/* Caption text */ 
+.text 
+{ 
+color: #f2f2f2; 
+font-size: 15px; 
+padding: 8px 12px; 
+position: absolute; 
+bottom: 8px; 
+width: 100%; 
+text-align: center; 
+} 
+
+/* Number text (1/3 etc) */ 
+.numbertext 
+{ 
+color: #f2f2f2; 
+font-size: 12px; 
+padding: 8px 12px; 
+position: absolute; 
+top: 0; 
+} 
+
+/* The dots/bullets/indicators */ 
+.dot 
+{ 
+cursor: pointer; 
+height: 15px; 
+width: 15px; 
+margin: 0 2px;
+background-color: #bbb; 
+border-radius: 50%; 
+display: inline-block; 
+transition: background-color 0.6s ease; 
+} 
+
+.active, .dot:hover 
+{ 
+background-color: #717171; 
+} 
+
+/* Fading animation */ 
+.fade 
+{ 
+-webkit-animation-name: fade; 
+-webkit-animation-duration: 1.5s; 
+animation-name: fade; 
+animation-duration: 1.5s; 
+} 
+
+@-webkit-keyframes fade 
+{ 
+from {opacity: .4} 
+to {opacity: 1} 
+} 
+
+@keyframes fade 
+{ 
+from 
+{
+	opacity: .4
+} 
+to 
+{
+	opacity: 1
+} 
+} 
+
+/* On smaller screens, decrease text size */ 
+@media only screen and (max-width: 300px) 
+{ 
+.prev, .next,.text 
+{
+	font-size: 11px;
+} 
+} 
+#ErrorFailde
+{
+	display:none;
+	position: absolute;
+	top: 100%;
+	left: 10%;
+}
